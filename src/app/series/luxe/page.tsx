@@ -283,7 +283,7 @@ export default function LuxeSeriesPage() {
         subtitle="Soft but Sharp"
         desc="ผนังลายผ้าที่สร้างบรรยากาศสบายตาและมีชีวิตชีวา ถ่ายทอดความละเมียดละไม พร้อมดีไซน์ที่คมชัดในทุกมุม เรียบง่ายแต่เต็มไปด้วยพลังของดีไซน์ที่แตกต่าง"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20135@2x.webp"
-        link="/collection/luxe-fabric"
+        link="/collection/fabric"
         color="#B08038"
       />
 
@@ -292,7 +292,7 @@ export default function LuxeSeriesPage() {
         subtitle="Luxury with Edge"
         desc="ผนังลายหนังที่สะท้อนความหรูหราอย่างมั่นใจ เติมเสน่ห์ที่มีเอกลักษณ์เฉพาะตัว คือการออกแบบที่ผสมผสานความหรูหรากับความร่วมสมัยอย่างลงตัว"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20139@2x.webp"
-        link="/collection/luxe-leather"
+        link="/collection/leather"
         color="#6A6C5F"
         reverse
       />
@@ -302,7 +302,7 @@ export default function LuxeSeriesPage() {
         subtitle="Shine Your Edge"
         desc="ผนังเมทัลลิกที่เปล่งประกายด้วยการเล่นแสงเงา เติมความมีพลังและความโมเดิร์นให้กับทุกพื้นที่ เป็นการแสดงออกที่เฉียบคมและเต็มไปด้วยความทันสมัย"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20137@2x.webp"
-        link="/collection/luxe-metallic"
+        link="/collection/metallic"
         color="#CBBDAD"
       />
 
@@ -311,7 +311,7 @@ export default function LuxeSeriesPage() {
         subtitle="Strong & Stylish"
         desc="ผนัง Outdoor ที่ออกแบบมาเพื่อรองรับทุกสภาพอากาศ ทั้งแสงแดดและฝน พร้อมดีไซน์ที่โดดเด่น เป็นการผสมผสานฟังก์ชันการใช้งานเข้ากับดีไซน์ที่สะกดสายตา"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20136@2x.webp"
-        link="/collection/luxe-outdoor"
+        link="/collection/outdoor"
         color="#7B2715"
         reverse
       />
@@ -321,7 +321,7 @@ export default function LuxeSeriesPage() {
         subtitle="Your Statement Piece"
         desc="ผนัง Signature ถ่ายทอดความคิดสร้างสรรค์ผ่านการผสมวัสดุและเทคนิคเฉพาะ เป็นเสมือนงานแฟชั่นที่ไม่ซ้ำใครและสะท้อนสไตล์ที่ชัดเจนของคุณ"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20134@2x.webp"
-        link="/collection/luxe-signature"
+        link="/collection/signature"
         color="#7C7D75"
       />
 
@@ -330,7 +330,7 @@ export default function LuxeSeriesPage() {
         subtitle="Bold & Distinct"
         desc="ผนังลายหินที่สะท้อนพลังและความสง่างามของธรรมชาติ ถ่ายทอดความแข็งแรงและความโดดเด่นในทุกมิติ ดีไซน์ที่มั่นคงและมีเอกลักษณ์ในตัวเอง"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20140@2x.webp"
-        link="/collection/luxe-stone"
+        link="/collection/stone"
         color="#B08038"
         reverse
       />
@@ -340,7 +340,7 @@ export default function LuxeSeriesPage() {
         subtitle="Touch of Night"
         desc="ผนังเวลเวทที่มอบสัมผัสเรียบหรูและเต็มไปด้วยชั้นเชิง เพิ่มบรรยากาศที่ลุ่มลึกและน่าค้นหา เป็นการตีความใหม่ของความหรูหราให้ทันสมัยและโดดเด่น"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20138@2x.webp"
-        link="/collection/luxe-velvet"
+        link="/collection/velvet"
         color="#7B2715"
       />
 
@@ -349,7 +349,7 @@ export default function LuxeSeriesPage() {
         subtitle="Nature Reinvented"
         desc="ผนังลายไม้ที่สะท้อนความเป็นธรรมชาติในรูปแบบที่ร่วมสมัย ถ่ายทอดความสมดุลของดีไซน์และฟังก์ชัน สร้างบรรยากาศที่สดใหม่และเข้ากับทุกแนวทางการตกแต่ง"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Luxe%20Series/Asset%20133@2x.webp"
-        link="/collection/luxe-wood"
+        link="/collection/wood"
         color="#c2bfb6"
         reverse
       />

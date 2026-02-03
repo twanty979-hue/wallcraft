@@ -286,7 +286,7 @@ export default function EssentialSeriesPage() {
         highlight="Panel"
         desc="ผนังสำเร็จรูป พร้อมติดตั้งทันทีโดยไม่ต้องเตรียมพื้นผิวมาก"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Essential%20Series/Asset%20169@2x.webp"
-        link="/collection/essential-solid"
+        link="/collection/solid-panel"
         color="#c2bfb6"
       />
 
@@ -295,7 +295,7 @@ export default function EssentialSeriesPage() {
         highlight="Panel"
         desc="ผนังที่มาพร้อมลูกเล่นหลากหลายในการต่อระหว่างแผ่น รวมถึงระบบการเข้ามุมในตัวที่ช่วยให้งานเรียบร้อยและสวยงาม"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Essential%20Series/Asset%20165@2x.webp"
-        link="/collection/essential-hollow"
+        link="/collection/hollow-core"
         color="#c2bfb6"
         reverse
       />
@@ -305,7 +305,7 @@ export default function EssentialSeriesPage() {
         highlight="Panel"
         desc="ผนังระแนงมาพร้อมตัวจบมุมสำเร็จรูปที่ออกแบบ เฉพาะแต่ละรุ่นเพื่อความเรียบร้อยและสมบูรณ์แบบ"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Essential%20Series/Asset%20168@2x.webp"
-        link="/collection/essential-decor"
+        link="/collection/decor-panel"
         color="#CBBDAD"
       />
 
@@ -314,7 +314,7 @@ export default function EssentialSeriesPage() {
         highlight="Aluminium & LED"
         desc="อลูมิเนียมเก็บงานในบางรุ่น สามารถเทียบสีฟิล์ม ได้อย่างแม่นยำพร้อมไฟ LED ขนาดกะทัดรัด"
         img="https://mpsnwijabfingujzirri.supabase.co/storage/v1/object/public/wallcraft_web/Essential%20Series/Asset%20167@2x.webp"
-        link="/collection/essential-accessories"
+        link="/collection/accessories"
         color="#7B2715"
         reverse
       />
