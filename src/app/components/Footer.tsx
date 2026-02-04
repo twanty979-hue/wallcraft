@@ -5,13 +5,14 @@ import { FaFacebookF, FaInstagram, FaLine, FaPhone } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#050505] border-t border-white/5 pt-20 pb-10 text-white">
+    <footer className="bg-[#050505] border-t border-white/5 pt-20 pb-10 text-white relative z-10">
       <div className="container mx-auto px-8 lg:px-24">
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+        {/* Adjusted Grid: 5 Columns on Desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mb-20">
           
-          {/* Column 1: Brand */}
-          <div className="col-span-1 md:col-span-1">
+          {/* --- Column 1: Brand (Takes 1 column) --- */}
+          <div className="lg:col-span-1">
             <Link href="/" className="text-3xl font-bold tracking-widest text-[#B08038] uppercase mb-6 block">
               Wallcraft
             </Link>
@@ -26,18 +27,66 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Series */}
-          <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white mb-8">Series Collection</h4>
-            <ul className="space-y-4 text-xs text-zinc-400 font-light tracking-wide">
-              <li><Link href="/series/craft-stone" className="hover:text-[#B08038] transition-colors">Craft Stone Series</Link></li>
-              <li><Link href="/series/luxe" className="hover:text-[#B08038] transition-colors">Luxe Series</Link></li>
-              <li><Link href="/series/essential" className="hover:text-[#B08038] transition-colors">Essential Series</Link></li>
-            </ul>
+          {/* --- Column 2: Collections (Takes 2 columns) --- */}
+          <div className="lg:col-span-2">
+             {/* Header placed here so it aligns nicely above the 3 columns */}
+             <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white mb-8">Collections</h4>
+             
+             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+               
+               {/* Sub-Col 1: Craft Stone */}
+               <div className="space-y-4">
+                 <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B08038] border-b border-white/10 pb-2 mb-3">
+                   Craft Stone
+                 </h3>
+                 <div className="space-y-3 flex flex-col">
+                   <Link href="/collection/tarra-stone" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Terra Stone</Link>
+                   <Link href="/collection/panorama" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Panorama</Link>
+                   <Link href="/collection/strength-rock" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Strength Rock</Link>
+                   <Link href="/collection/geoform" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Geoform</Link>
+                   <Link href="/collection/urban-form" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Urban Form</Link>
+                   <Link href="/collection/nature-grain" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Nature Grain</Link>
+                   <Link href="/collection/rust" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Rust</Link>
+                   <Link href="/collection/finesse" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Finesse</Link>
+                 </div>
+               </div>
+
+               {/* Sub-Col 2: Luxe Series */}
+               <div className="space-y-4">
+                 <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B08038] border-b border-white/10 pb-2 mb-3">
+                   Luxe Series
+                 </h3>
+                 <div className="space-y-3 flex flex-col">
+                   <Link href="/collection/fabric" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Fabric</Link>
+                   <Link href="/collection/leather" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Leather</Link>
+                   <Link href="/collection/outdoor" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Outdoor</Link>
+                   <Link href="/collection/signature" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Signature</Link>
+                   <Link href="/collection/stone" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Stone</Link>
+                   <Link href="/collection/velvet" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Velvet</Link>
+                   <Link href="/collection/wood" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Wood</Link>
+                 </div>
+               </div>
+
+               {/* Sub-Col 3: Essential Series */}
+               <div className="space-y-4">
+                 <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B08038] border-b border-white/10 pb-2 mb-3">
+                   Essential Series
+                 </h3>
+                 <div className="space-y-3 flex flex-col">
+                   <Link href="/collection/solid-panel" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Solid Panel</Link>
+                   <Link href="/collection/hollow-core" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Hollow Core Panel</Link>
+                   <Link href="/collection/decor-panel" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors">Decor Panel</Link>
+                   <Link href="/collection/accessories" className="text-[9px] uppercase tracking-[0.2em] text-[#c2bfb6] hover:text-white transition-colors leading-relaxed">
+                     Accessories<br/>Aluminium & LED
+                   </Link>
+                 </div>
+               </div>
+
+             </div>
           </div>
 
-          {/* Column 3: Technical Support */}
-          <div>
+          {/* --- Column 3: Technical Support (Takes 1 column) --- */}
+          <div className="lg:col-span-1">
             <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white mb-8">Technical Support</h4>
             <ul className="space-y-4 text-xs text-zinc-400 font-light tracking-wide">
               <li><Link href="/support/installation" className="hover:text-[#B08038] transition-colors">Installation Guide</Link></li>
@@ -47,12 +96,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact */}
-          <div>
+          {/* --- Column 4: Contact (Takes 1 column) --- */}
+          <div className="lg:col-span-1">
             <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-white mb-8">Contact Us</h4>
             <ul className="space-y-4 text-xs text-zinc-400 font-light tracking-wide">
               <li className="flex items-start gap-3">
-                <span className="opacity-50 mt-1">📍</span>
+                <span className="opacity-50 mt-1 text-[10px]">📍</span>
                 <span>123 Design District,<br />Bangkok, Thailand 10110</span>
               </li>
               <li className="flex items-center gap-3">
@@ -60,11 +109,12 @@ export default function Footer() {
                 <span>+66 2 123 4567</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="opacity-50">@</span>
+                <span className="opacity-50 text-[10px]">@</span>
                 <span>contact@wallcraft.th</span>
               </li>
             </ul>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
@@ -77,6 +127,7 @@ export default function Footer() {
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
+
       </div>
     </footer>
   );

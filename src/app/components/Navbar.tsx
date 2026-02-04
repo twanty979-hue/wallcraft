@@ -48,7 +48,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center space-x-12">
-            <Link href="/introduction" className="text-[10px] uppercase tracking-[0.4em] text-white/80 hover:text-[#B08038] transition-colors">Brand Introduction</Link>
+            <Link href="/introduction" className="text-[10px] uppercase tracking-[0.4em] text-white/80 hover:text-[#B08038] transition-colors">Band Introduction</Link>
             
             {/* Series Dropdown (เดิม) - อาจจะลบออกถ้า Collection ครอบคลุมแล้ว หรือเก็บไว้ตามดีไซน์ */}
             {/* ถ้าต้องการเก็บไว้ก็ปล่อยไว้ครับ แต่ถ้าจะรวม ให้ลบ section นี้ทิ้งได้เลย */}
@@ -65,72 +65,6 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-
-            {/* --- MEGA MENU COLLECTION (แก้ไขใหม่ตรงนี้) --- */}
-            <div className="relative py-2 flex items-center group cursor-pointer">
-              <span className="text-[10px] uppercase tracking-[0.4em] text-white/80 hover:text-[#B08038] transition-colors">Collection</span>
-              <div className="ml-2 p-1 group-hover:rotate-180 transition-transform duration-300">
-                <FaChevronDown className="text-[8px] opacity-40 group-hover:text-[#B08038] group-hover:opacity-100" />
-              </div>
-              
-              {/* เปลี่ยนความกว้างเป็น w-[750px] หรือ w-max เพื่อรองรับ 3 คอลัมน์ */}
-              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-4 w-[750px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                <div className="bg-zinc-900/95 backdrop-blur-2xl border border-white/5 p-8 shadow-2xl rounded-sm">
-                  
-                  {/* Grid 3 Columns */}
-                  <div className="grid grid-cols-3 gap-8">
-                    
-                    {/* Column 1: Craft Stone */}
-                    <div className="space-y-4">
-                      <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B08038] border-b border-white/10 pb-2 mb-3">
-                        Craft Stone
-                      </h3>
-                      <div className="space-y-3 flex flex-col">
-                        <Link href="/collection/tarra-stone" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Terra Stone</Link>
-                        <Link href="/collection/panorama" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Panorama</Link>
-                        <Link href="/collection/strength-rock" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Strength Rock</Link>
-                        <Link href="/collection/geoform" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Geoform</Link>
-                        <Link href="/collection/urban-form" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Urban Form</Link>
-                        <Link href="/collection/nature-grain" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Nature Grain</Link>
-                        <Link href="/collection/rust" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Rust</Link>
-                        <Link href="/collection/finesse" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Finesse</Link>
-                      </div>
-                    </div>
-
-                    {/* Column 2: Luxe Series */}
-                    <div className="space-y-4">
-                      <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B08038] border-b border-white/10 pb-2 mb-3">
-                        Luxe Series
-                      </h3>
-                      <div className="space-y-3 flex flex-col">
-                        <Link href="/collection/fabric" className="text-[9px] uppercase tracking-[0.2em]  hover:text-white transition-colors">Fabric</Link>
-                        <Link href="/collection/leather" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Leather</Link>
-                        <Link href="/collection/outdoor" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Outdoor</Link>
-                        <Link href="/collection/signature" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Signature</Link>
-                        <Link href="/collection/stone" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Stone</Link>
-                        <Link href="/collection/velvet" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Velvet</Link>
-                        <Link href="/collection/wood" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Wood</Link>
-                      </div>
-                    </div>
-
-                    {/* Column 3: Essential Series */}
-                    <div className="space-y-4">
-                      <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B08038] border-b border-white/10 pb-2 mb-3">
-                        Essential Series
-                      </h3>
-                      <div className="space-y-3 flex flex-col">
-                        <Link href="/collection/solid-panel" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Solid Panel</Link>
-                        <Link href="/collection/hollow-core" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Hollow Core Panel</Link>
-                        <Link href="/collection/decor-panel" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors">Decor Panel</Link>
-                        <Link href="/collection/accessories" className="text-[9px] uppercase tracking-[0.2em] c2bfb6 hover:text-white transition-colors leading-relaxed">Accessories<br/>Aluminium & LED</Link>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* ------------------------------------------- */}
             
             {/* Art Dropdown */}
             <div className="relative py-2 flex items-center group cursor-pointer">
@@ -146,7 +80,9 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="#" className="text-[10px] uppercase tracking-[0.4em] text-white/80 hover:text-[#B08038] transition-colors">Contact</Link>
+            <Link href="#" className="text-[10px] uppercase tracking-[0.4em] text-white/80 hover:text-[#B08038] transition-colors">Match Inspiration</Link>
+            <Link href="#" className="text-[10px] uppercase tracking-[0.4em] text-white/80 hover:text-[#B08038] transition-colors">Studio Q&A</Link>
+          
           </div>
 
           <div className="absolute right-0 lg:right-8 flex items-center space-x-6">
