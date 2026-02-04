@@ -6,11 +6,9 @@ config.autoAddCss = false;
 
 import "./globals.css";
 
-// --------------------------------------------------------
-// [สำคัญ] ต้องเพิ่มบรรทัดนี้ครับ (เลือก path ให้ตรงกับที่คุณแก้ไปเมื่อสักครู่)
-// ถ้าไฟล์อยู่ที่ app/components/Navbar.tsx ให้ใช้แบบนี้:
-import Navbar from "./components/Navbar"; 
-// --------------------------------------------------------
+// ✅ 1. Import ทั้ง Navbar และ Footer
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const prompt = Prompt({
   subsets: ["thai", "latin"],
@@ -39,8 +37,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${prompt.variable} ${notoSansThai.variable}`}>
       <body className={`antialiased noise font-sans text-[#808080]`}>
+        
+        {/* ส่วนหัว (แสดงทุกหน้า) */}
         <Navbar />
+        
+        {/* เนื้อหาของแต่ละหน้า */}
         {children}
+
+        {/* ส่วนท้าย (แสดงทุกหน้า) */}
+        <Footer />
+        
       </body>
     </html>
   );
